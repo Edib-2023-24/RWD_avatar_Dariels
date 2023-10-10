@@ -8,12 +8,29 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "";
+  font-family: "Inter", sans-serif;
   src: url("") format("woff2"), url("") format("woff");
 }
 
-/* ******************************** */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-/* Colores */
+  & .container {
+    padding: 15px;
 
-/* ******************************** */
+    & picture {
+      & img {
+        border-radius: 50%;
+      }
+      & strong {
+        font-family: Inter;
+        font-size: 20px;
+        color: black;
+      }
+    }
+  }
+}
+
